@@ -1,0 +1,4 @@
+<!--pages/unlok/unlock.wxml-->
+<view class="container">
+  <button bindtap="scan">扫码登录</button>
+</view>

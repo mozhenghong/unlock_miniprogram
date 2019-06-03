@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="btn-area">
+  <view wx:if="{{islogin}}">
+    <label>
+      账号：
+      <input bindinput="account1Input" placeholder="请输入账号" auto-focus value="{{account1}}" name="account1"/>  
+    </label>
+     <text wx-if="{{isaccount1}}">*请输入账号</text>
+    <label>
+      密码：
+      <input bindinput="password1Input" placeholder="请输入密码" password="true" auto-focus value="{{password1}}" name="password1" />   
+    </label>
+     <text wx-if="{{ispassword1}}">*请输入密码</text>
+    <button hover-class="active" bindtap='login' formType="submit">登录</button>
+  </view>
+   <view wx:else>
+    <label>
+      账号：
+      <input bindinput="account2Input" placeholder="请输入账号" auto-focus value="{{account2}}" name="account2"/>     
+    </label>
+     <text wx-if="{{isaccount2}}">*请输入账号</text>
+    <label>
+      密码：
+      <input bindinput="password2Input" placeholder="请输入密码" password="true" auto-focus value="{{password2}}" name="password2"/>
+    </label>
+     <text wx-if="{{ispassword2}}">*请输入密码</text>
+    <button hover-class="active" bindtap='register' formType="submit">注册</button>
+  </view>
+  </view>
+</form>
+</view>

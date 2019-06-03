@@ -1,0 +1,9 @@
+/* pages/unlok/unlock.wxss */
+button{
+  padding: 32rpx;
+  margin-top: 32rpx;
+  border: none;
+  background: #1890FF;
+  color: #fff;
+  line-height: 1.2;
+}
